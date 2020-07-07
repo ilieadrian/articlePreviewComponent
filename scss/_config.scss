@@ -1,0 +1,16 @@
+$desktop-width: 1440px;
+$mobile-width: 375px;
+$intermediate-width: 500px;
+$intermediate-width-2: 600px;
+$accent-color: hsl(217, 19%, 35%); //Very Dark Grayish Blue
+$desaturated-blue:hsl(214, 17%, 51%); //Desaturated Dark Blue:
+$grayish-blue: hsl(212, 23%, 69%); //Grayish Blue
+$background-color: hsl(210, 46%, 95%); // Light Grayish Blue
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+@mixin ease {
+    transition: all 0.2s ease-in;
+}

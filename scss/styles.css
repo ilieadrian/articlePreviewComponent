@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 730px;
+  height: 280px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 20px -5px #9eafc2;
+          box-shadow: 0px 5px 20px -5px #9eafc2;
+  position: relative;
+}
+
+.component .thumbnail {
+  width: 40%;
+}
+
+.component .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.component .component-content {
+  width: 60%;
+  padding: 40px;
+}
+
+.component .component-content .article-title {
+  font-size: 20px;
+  color: #48556a;
+}
+
+.component .component-content .article-content {
+  font-weight: 200;
+  line-height: 20px;
+  margin: 18px 0;
+  color: #6d7f97;
+}
+
+.component .component-content .article-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.component .article-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.component .date-author-wrapper {
+  margin-left: -130px;
+}
+
+.component .date-author-wrapper .article-author {
+  font-weight: 700;
+  color: #48556a;
+  margin-bottom: 2px;
+}
+
+.component .date-author-wrapper .article-date {
+  color: #9eafc2;
+}
+
+.component .share-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.component .share-icon svg {
+  background-color: #ecf2f8;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.component .share-icon.active {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.component .share-icon.active svg {
+  background-color: #6d7f97;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.component .share-icon.active svg path {
+  fill: #fff;
+}
+
+.component .sharing-links {
+  opacity: 0;
+  width: 250px;
+  height: 50px;
+  background-color: #48556a;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 20px -5px #9eafc2;
+          box-shadow: 0px 5px 20px -5px #9eafc2;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px 20px 30px;
+  position: absolute;
+  top: 144px;
+  right: -70px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.component .sharing-links::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  bottom: -8px;
+  background-color: #48556a;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 117px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.component .sharing-links p {
+  color: #9eafc2;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.component .sharing-links i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.component .sharing-links.active {
+  opacity: 1;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #6d7f97;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: #6d7f97;
+}
+
+@media screen and (max-width: 825px) {
+  .component {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 330px;
+    height: 500px;
+  }
+  .component .thumbnail {
+    width: 100%;
+    height: 35%;
+  }
+  .component .thumbnail img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .component .component-content {
+    width: 100%;
+    height: 65%;
+  }
+  .component #article-title {
+    font-size: 15px;
+    color: #48556a;
+  }
+  .component .article-content {
+    padding-bottom: 25px;
+  }
+  .component .date-author-wrapper {
+    margin-left: -30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
