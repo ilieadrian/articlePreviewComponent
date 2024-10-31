@@ -15,7 +15,7 @@ his project is a responsive article preview component built with HTML, CSS, and 
 
 <h3>Installation</h3>
 
-To run the project locally:
+To run the project locally :
 
   1. Clone the repository:
 
